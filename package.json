@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"parcel"
+    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/villanelle3/modulo_22#readme",
   "devDependencies": {
-    "parcel": "^2.8.3"
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3",
+    "sharp": "^0.31.3"
   }
 }
