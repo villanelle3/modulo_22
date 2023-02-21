@@ -12,14 +12,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
     <title>Grande Evento de Aniversário</title>
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/bolo.png" alt="">
-            <P class="hero__text">Evento de Aniversário começa em 10d 12h 13s</P>
+            <P class="hero__text">Evento de Aniversário começa em <span id="contador"></span></P>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Cine Park
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Trajes</b>
+                        Esportivos
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        13/12/2023 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Confirmar presença</a>
+            </div>
         </div>
     </header>
+    <section class="event event--first">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Descrição</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta labore odit tenetur voluptates mollitia vel tempora. Incidunt repellendus quidem itaque cumque quod debitis commodi autem facilis odit et? Quidem, ex!</p>
+            </div>
+            <img src="./images/1.jpg" alt="" class="event__image">
+        </div>
+    </section>
+    <section class="event event--second event--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Descrição</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta labore odit tenetur voluptates mollitia vel tempora. Incidunt repellendus quidem itaque cumque quod debitis commodi autem facilis odit et? Quidem, ex!</p>
+            </div>
+            <img src="./images/2.jpg" alt="" class="event__image">
+        </div>
+    </section>
+    <section class="event event--t" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Descrição</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta labore odit tenetur voluptates mollitia vel tempora. Incidunt repellendus quidem itaque cumque quod debitis commodi autem facilis odit et? Quidem, ex!</p>
+            </div>
+            <img src="./images/3.jpg" alt="" class="event__image">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
